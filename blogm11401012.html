@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「萬年小學生」的祕密？《名偵探柯南》三十年不敗神話大拆解！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        conan: {
+                            blue: '#1a365d',
+                            lightBlue: '#2c5282',
+                            red: '#e53e3e',
+                            gold: '#ecc94b',
+                            dark: '#0f172a',
+                        },
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .conan-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #e53e3e 100%);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .image-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 60%, #0f172a 100%);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #e53e3e; }
+    </style>
+</head>
+<body class="font-body selection:bg-conan-red selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center glass-card rounded-none border-t-0 border-x-0">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-conan-red rounded-full flex items-center justify-center font-bold text-white text-xs">TRUTH</div>
+            <span class="font-display font-extrabold tracking-tighter text-xl">MUSEUM.</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium tracking-widest text-slate-400">
+            <span class="text-white">ID: m11401012</span>
+            <span class="hover:text-conan-red transition-colors cursor-pointer">CASE FILES</span>
+            <span class="hover:text-conan-red transition-colors cursor-pointer">ARCHIVES</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center pt-20 px-6 overflow-hidden">
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-conan-blue opacity-20 blur-[120px] animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-conan-red opacity-10 blur-[120px] animate-pulse-slow"></div>
+
+        <div class="relative w-full max-w-6xl mx-auto z-10">
+            <div class="image-container relative rounded-[2rem] overflow-hidden shadow-2xl shadow-black/50 mb-12 transform hover:scale-[1.01] transition-transform duration-700">
+                <img src='https://opal.google/board/blobs/07846346-0dd2-4242-9b14-b25332efd305' alt='名偵探柯南三十周年插畫' class="w-full object-cover aspect-[21/9]" />
+                <div class="absolute bottom-0 left-0 p-8 md:p-12 w-full">
+                    <span class="inline-block px-4 py-1 bg-conan-red text-white text-xs font-bold tracking-widest rounded-full mb-4">CULTURAL PHENOMENON</span>
+                    <h1 class="text-4xl md:text-7xl font-display font-black leading-tight text-white mb-4">
+                        「萬年小學生」的祕密？<br/>
+                        <span class="text-conan-red">《名偵探柯南》</span><br/>
+                        三十年不敗神話大拆解！
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="reveal">
+            <p class="text-xl md:text-2xl leading-relaxed text-slate-300 font-light italic border-l-4 border-conan-red pl-8">
+                「在這個資訊碎片化、流行文化轉瞬即逝的年代，有一個穿著藍色小西裝、戴著紅色領結的國小一年級生，已經陪伴我們走過了三十個寒暑。」
+            </p>
+            <p class="mt-12 text-lg text-slate-400 leading-loose">
+                是的，我說的就是那個走到哪裡死到哪裡、永遠處於「暑假或寒假」狀態的江戶川柯南。作為一個長期觀察大眾文化的思考者，我常在想：為什麼一部推理漫畫能連載三十年？這背後不僅僅是「真相只有一個」的魅力，更隱含了某種社會心理學與文化經濟學的奇蹟。
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Sections: Bento Grid Style -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <!-- Section 1: Universe -->
+            <div class="md:col-span-7 glass-card p-10 reveal">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-4xl font-display font-black text-conan-red/30 italic">01</span>
+                    <h3 class="text-2xl font-bold text-white">這裡是哪位？——柯南宇宙快速導覽</h3>
+                </div>
+                <div class="space-y-6 text-slate-300">
+                    <p>如果你對柯南的印象還停留在「只是個愛推理的小鬼」，那可就太低估它了。這是一部融合了<span class="text-white font-bold">本格推理、科幻奇想（APTX 4869）、硬漢動作，以及甜到有些牙疼的純愛喜劇</span>的混合體。</p>
+                    <div class="p-6 bg-white/5 rounded-xl border border-white/10">
+                        <p class="text-sm italic">"青山剛昌自 1994 年在《週刊少年 Sunday》連載至今，單行本早就突破了 100 卷的大關，是名副其實的「國民級」文化符號。"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Origins -->
+            <div class="md:col-span-5 bg-conan-blue/40 glass-card p-10 reveal" style="transition-delay: 100ms;">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-4xl font-display font-black text-white/20 italic">02</span>
+                    <h3 class="text-2xl font-bold text-white">偵探夢的起點</h3>
+                </div>
+                <p class="text-slate-300 leading-relaxed">
+                    回溯到 1990 年代初期，青山老師做出了一個天才般的轉向：他沒有走極度慘烈或沉重的寫實路線，而是將「福爾摩斯般的冷靜」塞進了一個「被縮小的少年」體內。這種「大人的心靈、小孩的身軀」的設定，在智力博弈中增添了熱血與冒險感。
+                </p>
+            </div>
+
+            <!-- Section 3: Why We Watch (Full width) -->
+            <div class="md:col-span-12 glass-card p-10 reveal" style="transition-delay: 200ms;">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-4xl font-display font-black text-conan-gold/30 italic">03</span>
+                            <h3 class="text-2xl font-bold text-white">為什麼大家還在看？</h3>
+                        </div>
+                        <p class="text-slate-400">柯南的成功來自於一種「跨世代的魔法」。當初看漫畫的小朋友現在都變成帶小孩去電影院看劇場版的爸媽了。</p>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-6 bg-conan-red/10 rounded-2xl border border-conan-red/20">
+                            <h4 class="text-conan-red font-bold mb-2">角色經濟學</h4>
+                            <p class="text-sm text-slate-300">怪盜基德、灰原哀，以及帶動「百億元票房」的赤井秀一與安室透，人氣配角才是票房保障。</p>
+                        </div>
+                        <div class="p-6 bg-conan-lightBlue/10 rounded-2xl border border-conan-lightBlue/20">
+                            <h4 class="text-conan-lightBlue font-bold mb-2">公式化安全感</h4>
+                            <p class="text-sm text-slate-300">三選一、沉睡的小五郎、足球神技。這種穩定的節奏就像日常生活的背景音樂，極度解壓。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roast Section: Neobrutalist accents -->
+    <section class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-conan-red font-bold tracking-widest uppercase text-sm">Fan Critique</span>
+                <h2 class="text-4xl md:text-5xl font-display font-black text-white mt-2">吐槽大會：關於柯南的那些「坑」</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Roast 1 -->
+                <div class="reveal p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-conan-red transition-all group">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-conan-red transition-colors">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">米花市的時間黑洞</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">現實過了 30 年，劇中才過了半年！但通訊設備卻從呼叫器進化到智慧型手機，這簡直是米花市特有的量子力學。</p>
+                </div>
+
+                <!-- Roast 2 -->
+                <div class="reveal p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-conan-red transition-all group" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-conan-red transition-colors">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">從推理片變成動作大片</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">劇場版近年的走向越來越像好萊塢大片。柯南滑板避開飛彈、足球踢歪衛星，雖然硬核推理迷會搖頭，但視覺衝擊顯然更吸金。</p>
+                </div>
+
+                <!-- Roast 3 -->
+                <div class="reveal p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-conan-red transition-all group" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-conan-red transition-colors">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">CP 大亂鬥</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">這是網路社群最激烈的戰場——「新蘭派」與「柯哀派」的世紀大論戰，其激烈程度不亞於學術流派的交鋒。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="relative p-12 overflow-hidden rounded-[3rem] glass-card reveal">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-conan-blue opacity-30 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+            <div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl font-display font-black text-white/30 italic">05</span>
+                        <h3 class="text-3xl font-bold text-white">結局真的要來了嗎？</h3>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">
+                        青山老師曾宣稱已經畫好了最終回的草稿。但我預見，未來的柯南宇宙將持續朝向「全明星化」與「多元擴張」發展。即使本傳完結，像《犯人犯澤先生》這類外傳也會讓我們持續看到米花市的身影。
+                    </p>
+                </div>
+                <div class="md:w-1/2 w-full h-64 bg-slate-800/50 rounded-2xl border border-white/10 flex items-center justify-center">
+                    <div class="text-center">
+                        <p class="text-conan-red font-bold text-5xl mb-2">100+</p>
+                        <p class="text-slate-500 tracking-widest text-xs">VOLUMES PUBLISHED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="py-32 px-6 text-center">
+        <div class="reveal">
+            <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-8">
+                不管你幾歲，<br/>
+                <span class="text-conan-red">真相永遠只有一個！</span>
+            </h2>
+            <div class="w-24 h-1 bg-conan-red mx-auto mb-8"></div>
+            <p class="max-w-2xl mx-auto text-slate-400 text-lg leading-relaxed mb-12">
+                《名偵探柯南》已經不僅僅是一部偵探漫畫，它是一種文化記憶。它告訴我們，正義或許會遲到，但真相永遠不滅。只要那個熟悉的背景音樂響起，我們依舊會坐在螢幕前，與那位「萬年小學生」一起，尋找唯一的真相。
+            </p>
+            <div class="flex justify-center gap-4">
+                <button class="px-8 py-4 bg-conan-red hover:bg-red-700 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-lg shadow-conan-red/30">
+                    收藏本案卷
+                </button>
+                <button class="px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-bold rounded-full border border-white/20 transition-all">
+                    分享真相
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-like Meta Information (No actual copyright footer as requested) -->
+    <div class="py-12 border-t border-white/5 flex flex-col items-center">
+        <div class="text-slate-600 text-xs tracking-widest uppercase mb-2">CASE ID: m11401012 | INVESTIGATOR REPORT</div>
+        <div class="flex gap-4">
+            <div class="w-2 h-2 rounded-full bg-conan-blue"></div>
+            <div class="w-2 h-2 rounded-full bg-conan-red"></div>
+            <div class="w-2 h-2 rounded-full bg-conan-gold"></div>
+        </div>
+    </div>
+
+    <script>
+        // Simple Intersection Observer for scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        
+        // Dynamic interaction for background glow
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            // Subtly shift background gradients based on mouse
+            // (Optional premium touch)
+        });
+    </script>
+</body>
+</html>
