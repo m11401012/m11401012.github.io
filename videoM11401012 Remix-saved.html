@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>耀西 (Yoshi) 深度研究報告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yoshi: {
+                            light: '#e0f2f1',
+                            green: '#4CAF50',
+                            dark: '#2E7D32',
+                            accent: '#FF5252',
+                            egg: '#F0F4C3'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: radial-gradient(circle at top left, #f1f8e9, #ffffff);
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+        .yoshi-gradient {
+            background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #4CAF50;
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #4CAF50;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-slate-800 font-sans selection:bg-yoshi-green selection:text-white">
+
+    <!-- Hero Header -->
+    <header class="relative overflow-hidden pt-16 pb-8 md:pt-24 md:pb-12 px-6">
+        <div class="max-w-6xl mx-auto relative z-10 text-center">
+            <span class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-yoshi-dark uppercase bg-yoshi-egg rounded-full">
+                Nintendo Legend Series
+            </span>
+            <h1 class="text-5xl md:text-7xl font-display font-800 tracking-tight text-slate-900 mb-6">
+                耀西 <span class="text-yoshi-green italic">Yoshi</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-slate-600 font-light leading-relaxed">
+                從超級瑪利歐世界的驚艷登場，到定義「最佳夥伴」的角色巔峰。
+            </p>
+        </div>
+        <!-- Decorative Background Elements -->
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-yoshi-green opacity-10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div class="absolute top-1/2 -right-12 w-48 h-48 bg-yoshi-accent opacity-10 rounded-full blur-2xl"></div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 md:px-6 space-y-16 pb-24">
+
+        <!-- 1. 資訊圖表置頂 (Top: Infographic/Image) -->
+        <section class="animate-fade-in">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-yoshi-green to-yoshi-egg rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative flex flex-col items-center">
+                    <img src="https://opal.google/board/blobs/6f2dca57-6e3b-4413-8fe9-e343ecc03cf4" alt="耀西研究資訊圖表" class="rounded-2xl shadow-2xl w-full max-h-[600px] object-contain bg-white p-4">
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                        <!-- Summary Highlight Components -->
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-yoshi-green">
+                            <h3 class="font-display font-bold text-xl mb-2 flex items-center">
+                                <span class="text-2xl mr-2">🥚</span> 核心起源
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">1990年《超級瑪利歐世界》首登，由手塚卓志與日野重文設計，實現了宮本茂的夙願。</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-yoshi-green">
+                            <h3 class="font-display font-bold text-xl mb-2 flex items-center">
+                                <span class="text-2xl mr-2">👅</span> 標誌能力
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">長舌吞食、蛋投擲與經典的「空中踏步」，這些動作定義了耀西獨特的操作感。</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl border-l-4 border-yoshi-green">
+                            <h3 class="font-display font-bold text-xl mb-2 flex items-center">
+                                <span class="text-2xl mr-2">🎨</span> 設計演進
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">從長頸恐龍到圓潤擬人化，耀西隨著硬體進步演變成極具親和力的全球明星。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 短影片置中 (Center: Video) -->
+        <section class="py-12 flex flex-col items-center">
+            <div class="w-full max-w-4xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-display font-bold text-slate-900 mb-4 section-title inline-block">動態影像摘要</h2>
+                    <p class="text-slate-500 italic max-w-xl mx-auto">
+                        這段影片展示了耀西的 3D 動畫魅力，涵蓋起源背景與多樣化的色彩特色。
+                    </p>
+                </div>
+                
+                <div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <video class="w-full h-full object-cover" controls>
+                        <source src="https://opal.google/board/blobs/37b55c0b-ca5c-4834-a3e1-b5f6cce714d4" type="video/mp4">
+                        您的瀏覽器不支援影片播放。
+                    </video>
+                    <!-- Overlay Decor -->
+                    <div class="absolute bottom-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-white tracking-widest uppercase pointer-events-none">
+                        3D Showcase
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 報告置底 (Bottom: Full Report) -->
+        <section class="relative bg-white rounded-[2rem] p-8 md:p-16 shadow-inner border border-slate-100 overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-5">
+                <svg width="200" height="200" viewBox="0 0 100 100" fill="currentColor">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none" />
+                    <circle cx="35" cy="35" r="10" />
+                    <circle cx="65" cy="45" r="5" />
+                    <circle cx="45" cy="70" r="8" />
+                </svg>
+            </div>
+
+            <article class="prose prose-slate max-w-none">
+                <h2 class="text-4xl font-display font-800 text-slate-900 mb-8 border-b pb-4">耀西 (Yoshi) 深度研究報告</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-8 space-y-12">
+                        <!-- Origin -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-yoshi-dark mb-4 flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-yoshi-green text-white flex items-center justify-center mr-3 text-sm">01</span>
+                                起源與誕生背景
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-lg">
+                                耀西的誕生可以追溯到任天堂開發《超級瑪利歐兄弟》時期。當時宮本茂便希望能讓瑪利歐騎乘馬或恐龍，但受限於紅白機的硬體限制，此構思一直未能實現。直到 1990 年超級任天堂主機推出，開發團隊在《超級瑪利歐世界》中正式引入了耀西。
+                            </p>
+                            <p class="text-slate-600 leading-relaxed text-lg mt-4 bg-slate-50 p-4 rounded-xl border-l-4 border-slate-200">
+                                設計師日野重文最初將其設定為一種恐龍，但在後續的設定中，耀西被定義為「耀西一族」的成員。其日文全名為 <span class="font-mono text-yoshi-dark">「T. Yoshisaur Munchakoopas」</span>。
+                            </p>
+                        </div>
+
+                        <!-- Evolution -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-yoshi-dark mb-4 flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-yoshi-green text-white flex items-center justify-center mr-3 text-sm">02</span>
+                                設計的演進
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="shrink-0 w-24 text-xs font-bold text-slate-400 mt-2">1990s</div>
+                                    <p class="text-slate-600"><strong>初期階段</strong>：脖子較長，四肢較纖細，背部有類似鞍的構造，更偏向原始恐龍。</p>
+                                </div>
+                                <div class="flex items-start gap-4 border-t pt-4">
+                                    <div class="shrink-0 w-24 text-xs font-bold text-slate-400 mt-2">1995s</div>
+                                    <p class="text-slate-600"><strong>可愛化轉型</strong>：在《耀西島》中，為了配合手繪畫風，比例變得更加圓潤，眼神更具靈性。</p>
+                                </div>
+                                <div class="flex items-start gap-4 border-t pt-4">
+                                    <div class="shrink-0 w-24 text-xs font-bold text-slate-400 mt-2">現代</div>
+                                    <p class="text-slate-600"><strong>直立與擬人化</strong>：姿態更趨向直立行走，色彩也從單一的綠色擴展出紅、藍、黃、粉紅等多種色彩。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Abilities -->
+                        <div class="bg-yoshi-light/30 p-8 rounded-3xl">
+                            <h3 class="text-2xl font-bold text-yoshi-dark mb-6">核心能力與特性</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                    <h4 class="font-bold text-yoshi-green mb-2">長舌攻擊 (Tongue Lash)</h4>
+                                    <p class="text-sm text-slate-500">耀西能用長舌捕捉敵人並吞入腹中。</p>
+                                </div>
+                                <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                    <h4 class="font-bold text-yoshi-green mb-2">蛋系統 (Egg System)</h4>
+                                    <p class="text-sm text-slate-500">將吞食的敵人轉化為蛋，作為跟隨的武器或投擲物。</p>
+                                </div>
+                                <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                    <h4 class="font-bold text-yoshi-green mb-2">空中踏步 (Flutter Jump)</h4>
+                                    <p class="text-sm text-slate-500">跳躍至最高點時，快速擺動雙腿獲取短暫上升或滯空。</p>
+                                </div>
+                                <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                    <h4 class="font-bold text-yoshi-green mb-2">屁股撞擊 (Ground Pound)</h4>
+                                    <p class="text-sm text-slate-500">《耀西島》中即有的強力下壓動作。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Games -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-yoshi-dark mb-4 flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-yoshi-green text-white flex items-center justify-center mr-3 text-sm">03</span>
+                                遊戲作品表現與 30 週年回顧
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed mb-4">
+                                耀西的定位在 1995 年迎來重大轉折。《耀西島》將其從「坐騎」提升為「主角」，此後的系列展現了大膽的美術風格（如毛線、手工瓦楞紙感）。
+                            </p>
+                            <p class="text-slate-600 leading-relaxed">
+                                在 2020 年慶祝 30 週年時，業界普遍認為耀西是任天堂遊戲設計哲學的縮影——將單純的工具角色昇華為具備深厚情感連結的夥伴。
+                            </p>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="border-t-2 border-dashed border-slate-200 pt-8">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-4">結論 (Conclusion)</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                耀西從一個受限於硬體的草稿，演變為全球公認的文化符號。其設計的成功在於兼具「工具性」與「角色魅力」。作為瑪利歐的守護者與冒險夥伴，其影響力至今仍深遠地作用於橫向捲軸遊戲的開發中。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar: References & ID -->
+                    <div class="lg:col-span-4 space-y-8">
+                        <div class="bg-slate-50 p-8 rounded-3xl sticky top-8">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-6">學務資訊</h4>
+                            <div class="mb-8">
+                                <p class="text-slate-400 text-xs">學號</p>
+                                <p class="text-xl font-display font-bold text-slate-800">m11401012</p>
+                            </div>
+
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-4">文獻來源</h4>
+                            <ul class="space-y-4">
+                                <li class="text-sm group">
+                                    <span class="block font-bold text-slate-700">Nintendo Official Site</span>
+                                    <span class="text-slate-500 italic">The History of Yoshi</span>
+                                </li>
+                                <li class="text-sm">
+                                    <span class="block font-bold text-slate-700">IGN</span>
+                                    <span class="text-slate-500 italic">How Yoshi Changed Over the Years</span>
+                                </li>
+                                <li class="text-sm">
+                                    <span class="block font-bold text-slate-700">Kotaku</span>
+                                    <span class="text-slate-500 italic">30 Years of Yoshi</span>
+                                </li>
+                                <li class="text-sm">
+                                    <span class="block font-bold text-slate-700">Mario Wiki</span>
+                                    <span class="text-slate-500 italic">Yoshi's Biology</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Content-specific Footer as requested -->
+    <div class="bg-slate-900 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center gap-4 text-center">
+            <p class="text-slate-400 font-display">
+                【主題探索報告】by <span class="italic text-red-500 font-bold">Famidoc Chang</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Micro-interactions & Smooth Entry -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
